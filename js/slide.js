@@ -1,0 +1,1 @@
+let currentIndex=0;function slideImages(){let e=document.getElementById("sliderTrack"),t=document.querySelectorAll(".slider-item"),r=t[0].offsetWidth+parseInt(getComputedStyle(t[0]).marginRight);++currentIndex>=t.length&&(currentIndex=0),e.style.transform=`translateX(-${currentIndex*r}px)`}setInterval(slideImages,1e3);
